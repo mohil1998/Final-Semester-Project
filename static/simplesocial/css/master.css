@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background-image: url('../images/image1.jpeg');
+  background-color: #000000;
+  color:white;
+}
+
+#navbar
+{
+  margin: 40px 20px 20px 20px;
+
+  border-radius: 25px;
+}

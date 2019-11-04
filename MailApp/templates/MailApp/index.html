@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container" style="border-radius:25px;padding:40px; opacity:0.3;">
+	<h3>Mail THEM!</h3>
+
+	<form method="post" action="{% url 'maail:index' %}">
+		{% csrf_token %}
+		<textarea name="message" placeholder="Message..." style="color:black;opacity:1;margin:5px;"></textarea><br/>
+
+		<textarea name="mailling" placeholder="Email...." style="color:black; margin:5px;"></textarea><br/>
+		<input type="submit"  style="color:black; margin:10px;" />
+	</form>
+</div>
+{% endblock %}
